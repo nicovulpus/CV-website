@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nicholas Vandremo">
+    <meta property="og:title" content="Vandremo Solutions">
+    <meta property="og:description" content=" Vandremo Solutions helps you find problems and solve them. Simple as that.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" type="image/png">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="index.html">
+    <meta property="og:locale" content="nb_NO">
+    <meta property="og:type" content="website">
+
+    <title> Mathematics and programming </title>
+
+</head>
+
+<div class="DateAndClockContainer">
+  <div class = "DateAndClock" id="DateAndClock"><br></div>
+
+</div>
+     <!--
+  <div class="ProgrammingListContainer">
+        <ul class="ProgrammingList">
+         <li class="ProgrammingList">Pytahgoras` Theorem</li>
+         <li class="ProgrammingList">Graphing Quadratics</li>
+         <li class="ProgrammingList">Quadratic Formula</li>
+        </ul>
+  </div>
+  -->
+    
+    <div class="PythagorasHeaderContainer">
+    <h1 id="PythagorasHeader">Pythagoras` theorem</h1>
+    </div>
+    <br>
+
+  <div class="PythagorasFormulaContainer">
+ 
+     <div class="PythagorasFormula">
+        a<sup><sup>2</sup></sup> + b<sup><sup>2</sup></sup> = c<sup><sup>2</sup></sup>
+     </div>
+  </div>
+
+  <div class="TriangleContainer">
+    <canvas id="TriangleCanvas"></canvas>
+  
+  </div>
+
+  <div class="PythagorasLabelAndInputContainer">
+
+    <label class="PythagorasInputLabel" id="LabelA">Base (A) </label>
+    <input class ="PythagorasInputField" type="number" name="Side A" id="InputA">
+
+    <label class="PythagorasInputLabel" id="LabelB">Height  (B) </label>
+    <input class ="PythagorasInputField" id="InputB"type="number" name="Side B" id="InputB">
+
+    <label class="PythagorasInputLabel" id="LabelC">Hypotenuse (C) </label>
+    <input class ="PythagorasInputField" type="number" name="Side C" id="InputC">
+    
+    <button  onclick="handlePythagorasCalculate()" id="PythagorasButton">Calculate</button>
+      </div>
+      <div class="ResultContainer">
+      <label id="Result"> Please enter two variables. </label>
+      </div>
+    
+
+
+<div class="ParabolaGraphTitleContainer"><h1 class="ParabolaGraphTitle"> Graphing Quadratics</h1></div>
+<div class ="QuadraticStandardFormContainer">
+  <div class="QuadraticStandardForm">ax<sup><sup>2</sup></sup> + bx +c = 0 </div> 
+</div>
+
+<div class="QuadraticGraphCanvasContainer">
+  <canvas id="QuadraticGraphCanvas"> </canvas>
+</div>
+  
+<div class="QuadraticGraphFormContainer">
+  <form class="QuadraticGraphForm">
+      <label for="a">a:</label>
+      <input class="GraphInputField"type="number" id="QuadraticInputA" name="qa1" required><br><br>
+      <label for="b">b:</label>
+      <input class="GraphInputField" type="number" id="QuadraticInputB" name="qb2" required><br><br>
+      <label for="a">c:</label>
+      <input class="GraphInputField" type="number" id="QuadraticInputC" name="qc3" required><br><br>
+      <button type="button" class = "GraphButton" id="GraphButton" onclick="drawQuadraticParabola()">Draw graph</button>       
+      
+      <div class="QuadraticGraphCanvasOutputContainer"> 
+        <div class="QuadraticGraphCanvasOutput">Please enter the values a, b and c. Standard form.</div>
+      </div>
+  </form>
+</div>
+
+<div class="CircleCanvasContainer">
+  <canvas class="CircleCanvas" id="CircleCanvas"></canvas>
+</div>
+
+<div class ="CircleFormOutputContainer">
+  <output class ="CircleRadiusOutputField" id ="CircleRadiusOutputField"></output>
+</div>
+
+<div class="CircleFormContainer">
+  <div class="CircleForm">
+  <form class="CircleForm">
+  <label for="Radius">Radius: </label>
+  <input class="CircleRadiusInputField" type="number" id="CircleRadiusInput" name ="CircleRadius" required><br>
+  <button type="button" class="CalculateCircleCircumferenceButton" id="CalculateCircleCircumeferenceButton" onclick="calculateCircleCircumference()">Calculate Circumference</button>
+  </form>
+  </div>
+</div>
+    
+
+<div class="CalculatorContainerTopRow">
+  <button type ="button" class="Calculator1" id="Calculator1" onclick="buttonClick(1)">1</button><br>
+  <button type ="button" class="Calculator2" id="Calculator2" onclick="buttonClick(2)">2</button><br>
+  <button type ="button" class="Calculator3" id="Calculator3" onclick="buttonClick(3)">3</button><br>
+</div>
+<div class="CalculatorContainerMiddleRow">
+  <button type ="button" class="Calculator4" id="Calculator4" onclick="buttonClick(4)">4</button><br>
+  <button type ="button" class="Calculator5" id="Calculator5" onclick="buttonClick(5)">5</button><br>
+  <button type ="button" class="Calculator6" id="Calculator6" onclick="buttonClick(6)">6</button><br>
+</div>
+<div class="CalculatorContainerBottomRow">
+  <button type ="button" class="Calculator7" id="Calculator7" onclick="buttonClick(7)">7</button><br>
+  <button type ="button" class="Calculator8" id="Calculator8" onclick="buttonClick(8)">8</button><br>
+  <button type ="button" class="Calculator9" id="Calculator9" onclick="buttonClick(9)">9</button><br>
+</div>
+<div class="CalculatorContainerOperations">
+  <button type ="button" class="CalculatorAddition" id="CalculatorAddition" onclick="addition()">+</button><br>
+  <button type ="button" class="CalculatorSubtraction" id="CalculatorSubtraction" onclick="buttonClick(event)">-</button><br>
+  <button type ="button" class="Calculator0" id="Calculator0" onclick="buttonClick(event)">0</button><br>
+  <button type ="button" class="CalculatorMultiply" id="CalculatorMultiply" onclick="buttonClick(event)">*</button><br>
+  <button type ="button" class="Calculator1" id="CalculatorDivision" onclick="buttonClick(event)">/</button><br>
+  <button type ="button" class="Calculator1" id="CalculatorEqual" onclick="calculate">=</button><br>
+</div>
+
+<div class="CalculatorContainerInput">
+  <input type="text" id="CalculatorDisplayInput" readonly>
+</div>
+      
+
+    
+<script src="javascript.js"></script>
+
+</body>
+</html>
