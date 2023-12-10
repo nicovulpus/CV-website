@@ -8,12 +8,11 @@ body {
 }
 
 .FirstContainer{
-  height:50vh;
+  height:10vh;
   width:100%;
-  background-color:blue;
   display:flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
 }
 
@@ -28,8 +27,8 @@ body {
 }
 
 .CVpicturecontainer{
-  background-color:red;
-
+opacity:50%;
+margin-right:200px;
 }
 
 .CVpicture{
@@ -43,7 +42,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 50px;
+  margin-top: 10px;
   border-radius: 8px;
   height: 40px; 
   width: 100px; 
@@ -87,8 +87,17 @@ body {
 }
 .NicholasVandremoContainer{
   margin-left:100px;
+  display:flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  
+}
+
+.NicholasVandremoContainer1{
 
 }
+
 .NicholasVandremop{
   font-size: 64.72px;
   font-family:'Kanit', sans-serif;
@@ -122,4 +131,89 @@ body {
   align-items: flex-start;
 }
 
+.EducationContainer {
+  opacity: 0; /* Initially set opacity to 0 */
+  transform: translateY(50px); /* Initially move the container down by 50px */
+  transition: opacity 1s, transform 1s; /* Apply transitions */
+  height:40vh;
+  width:100%;
+  color:white;
+  display:flex;
+  justify-content: space-evenly;
+  align-items:center;
+ 
+  font-family:'Kanit', sans-serif
+}
 
+.EducationContainer.appear {
+  opacity: 1; /* Set opacity to 1 when the 'appear' class is added */
+  transform: translateY(0); /* Move the container back to its original position */
+}
+
+.HighSchoolContainer{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+  flex-direction: column;
+  width: 30vw;
+  text-align: center;
+}
+.SonansContainer{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+  width: 30vw;
+  text-align: center;
+}
+
+.BIContainer{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  width: 30vw;
+  text-align: center;
+
+}
+
+
+.CareerContainer{
+
+  height:40vh;
+  width:100%;
+height: 100vh; /* Set the height of the career container to be the same as the viewport height */
+    opacity: 0;   /* Initially set the opacity to 0 to hide it */
+    transition: opacity 0.5s ease; /* Add a smooth transition effect */
+    background-color: blue;
+  
+}
+
+.SonansBilde{
+  height:40px;
+}
+.FosenBilde{
+  height:40px;
+}
+.BIBilde{
+  height:40px;
+}
+
+.HighSchool{
+  display:flex;
+  align-items:center;
+  justify-content: space-evenly;
+  text-align: center;
+
+}
+
+.Sonans{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  text-align: center;
+
+}
