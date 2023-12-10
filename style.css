@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x:hidden;
+  height:100%;
+  width:100%;
+  background-color:black;
+}
+
+.FirstContainer{
+  height:50vh;
+  width:100%;
+  background-color:blue;
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.TypingTextContainerDigitalResume{
+  font-size:20px;
+  width:100%;
+  top:0;
+  flex-direction: row;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.CVpicturecontainer{
+  background-color:red;
+
+}
+
+.CVpicture{
+  height:500px;
+  width:auto;
+  border-radius:400px;
+
+}
+
+.ContactButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  border-radius: 8px;
+  height: 40px; 
+  width: 100px; 
+  border: 2px solid #b4b4b4; 
+  font-family: 'Kanit', sans-serif;
+  font-size: 16px; 
+  background-color: #808080; 
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+.ContactButton:hover {
+  background-color: #ffffff; /* Dark background color on hover */
+  color: #0c0c0c; /* Light text color on hover */
+  transform: scale(1.05); /* Slightly scale up on hover for a subtle effect */
+}
+
+.TypedTextIndex {
+  color: rgb(255, 255, 255);
+  font-size:40px;
+  display:inline;
+  padding-left:15px;
+  font-family:'Kanit', sans-serif;
+
+}
+
+.CursorIndex {
+  color: rgb(255, 255, 255);
+  animation: blinkCursor 1s infinite;
+  opacity:1;
+  font-size:40px;
+
+}
+@keyframes blinkCursor {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.NicholasVandremoContainer{
+  margin-left:100px;
+
+}
+.NicholasVandremop{
+  font-size: 64.72px;
+  font-family:'Kanit', sans-serif;
+  font-weight:bold;
+  color:rgb(255, 255, 255);
+  opacity:0;
+  animation: appearAnimation 5s forwards;
+}
+
+@keyframes appearAnimation{
+  to{
+    opacity:1;
+  }
+}
+
+.characterkeywords{
+  font-size: 24.72px;
+  font-family:'Kanit', sans-serif;
+  color:rgb(255, 255, 255);
+
+}
+.NavigationMenuTop {
+  width: 100%;
+  height: 5vh;
+  top: 0;
+}
+
+.LandingPageContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+
