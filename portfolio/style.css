@@ -1,0 +1,260 @@
+/* AutoPrefixer */
+
+::placeholder {
+  color: gray;
+}
+
+.image {
+  background-image: url(image@1x.png);
+}
+@media (min-resolution: 2dppx) {
+  .image {
+    background-image: url(image@2x.png);
+  }
+}
+
+::-moz-placeholder {
+  color: gray;
+}
+::placeholder {
+  color: gray;
+}
+
+.image {
+  background-image: url(image@1x.png);
+}
+@media (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 2dppx) {
+  .image {
+    background-image: url(image@2x.png);
+  }
+}
+
+/* Bootstrap styles*/
+
+
+/* Custom styling*/
+
+
+body{
+  background-color: rgb(255, 255, 255);
+}
+
+.section{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  color: black;
+  flex-direction: column;
+
+  
+}
+
+.section:nth-child(odd){
+  background: rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
+  
+ 
+}
+
+.section:nth-child(even){
+  background: black;
+  color:white;
+ 
+
+}
+
+/* Media query for screens smaller than a certain width (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+  /* Adjust the navigation bar styles for smaller screens */
+  .navbar {
+    width: 100%;
+    height:10vh; /* Ensure full width on small screens */
+  }
+  .nav-pills {
+    flex-wrap: wrap; /* Allow button wrapping */
+  }
+  .nav-item {
+    width: 25%; /* Make each button take up half of the container width */
+  }
+  .nav-link {
+    padding: 0.5rem; /* Reduce padding around each button */
+    font-size: 6px; /* Decrease font size */
+  }
+
+    .headandtextcontainer {
+      position: relative; /* Set position to relative */
+      top: 20%; /* Move the container down by 50% of its parent's height */
+      transform: translateY(-30%); /* Adjust to center the container vertically */
+      
+      text-align: center; /* Center the text horizontally */
+      padding: 10px;
+    }
+    .textcontainer{
+      margin-top:none;
+      text-align: center;
+    }
+
+    #cvpic {
+    
+      width: 150px !important;
+      height: 200px !important;
+      max-width: 70%; 
+      max-height: 80%;
+      border-radius: 90% !important;
+      margin-bottom: 60px;
+      
+    }
+    
+    h1{
+      font-size: 35px !important;
+    }
+    
+    p{
+      font-size: 20px !important;
+    }
+
+  }
+
+#navbar-example2{
+  background-color: rgb(250, 248, 248);
+  color: white;
+}
+#main{
+  background-color: black;
+  
+}
+a ,h1 , p{
+  font-family: 'Kanit', sans-serif;
+  font-weight: bold;
+  
+}
+
+h1{
+  font-size: 100px;
+}
+
+p{
+  font-size: 30px;
+}
+
+.headandtextcontainer{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding:10px;
+  margin-top: -300px;
+  
+}
+
+.nav-link {
+  color: #333; /* Dark color */
+}
+.nav-item{
+  color: #333;
+}
+.nav nav-pills{
+  color: #333;
+}
+
+.textcontainer{
+  margin-top:100px;
+  text-align: center;
+  width:100vw;
+  height:40vh;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+
+#cvpic{
+  width:15vw;
+  height:30vh;
+  border-radius: 30%;;
+}
+
+#Cpic{
+  height: 10vh;
+  width: auto;
+}
+
+.languagecontainer{
+
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 70vw;
+  margin-top: 200px;
+
+}
+
+#pythonpic{
+
+  height: 10vh;
+  width: auto;
+}
+
+.Ccontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pythonContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#javascriptpic{
+  height: 10vh;
+  width: auto;
+}
+#flaskpic{
+  height:10vh;
+  width:auto;
+}
+#djangopic{
+  height:10vh;
+  width:auto;
+}
+#sqlitepic{
+  height:10vh;
+  width:auto;
+}
+
+.flaskContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.djangoContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.sqliteContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#languagesh1{
+  margin-top:100px;
+}
+
+#contactContainer
+{
+  margin-top:-200px;
+}
