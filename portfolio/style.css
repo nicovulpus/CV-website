@@ -258,3 +258,14 @@ p{
 {
   margin-top:-200px;
 }
+
+.nav-link.active {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(0, 0, 0) !important;
+}
+.nav-link{
+  color: black;
+}
+.nav-link:hover{
+  color : rgb(83, 76, 76);
+}

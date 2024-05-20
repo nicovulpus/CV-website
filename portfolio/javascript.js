@@ -24,3 +24,20 @@ function typeWriter() {
 // Call the function to start the typewriter effect
 typeWriter();
 
+
+
+// Get the scrollspy element
+var scrollSpyElement = document.querySelector('[data-bs-spy="scroll"]');
+
+// Add event listener for the 'activate' event
+scrollSpyElement.addEventListener('activate.bs.scrollspy', function (event) {
+    // Get the currently active menu item
+    var activeMenuItem = event.target.querySelector('.active');
+
+
+});
+
+
+$('h1').on('click', function(){
+    $(this).toggleClass('turnBlue');
+})
